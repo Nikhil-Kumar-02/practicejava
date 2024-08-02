@@ -6,12 +6,16 @@ public class App3 {
         Observer tvSubscription1 = new TVdisplay(EastWeatherInstance);
         Observer tvSubscription2 = new TVdisplay(EastWeatherInstance);
         Observer tvSubscription3 = new TVdisplay(WestWeatherInstance);
+        Observer mobileDisplay1 = new MobileDisplay(WestWeatherInstance);
+        Observer mobileDisplay2 = new MobileDisplay(EastWeatherInstance);
 
         EastWeatherInstance.add(tvSubscription1);
         EastWeatherInstance.add(tvSubscription2);
 
         WestWeatherInstance.add(tvSubscription3);
 
+        EastWeatherInstance.add(mobileDisplay2);
+        WestWeatherInstance.add(mobileDisplay1);
 
         EastWeatherInstance.setTemp(5);
         EastWeatherInstance.setTemp(5);

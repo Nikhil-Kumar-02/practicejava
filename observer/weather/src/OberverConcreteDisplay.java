@@ -7,7 +7,7 @@ public class OberverConcreteDisplay implements Observer{
 
     @Override
     public void update() {
-        keepingEyeOnObject.displayMessage();
+        
     }
     
 }
